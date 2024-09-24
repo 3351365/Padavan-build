@@ -94,7 +94,6 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SFTP/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSH/d' .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n/CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y/g' .config
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_HTTPS=n/CONFIG_FIRMWARE_INCLUDE_HTTPS=y/g' .config
 
@@ -154,7 +153,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config  #去除用于 Drcom 的工具
         echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config  #去除可用于锐捷的 eap 客户端
         echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config  #去除南工网络客户端
-        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config  #SOCAT
+        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >> .config  #SOCAT
         
         fi
         #########################################################################################
