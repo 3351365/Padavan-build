@@ -147,11 +147,19 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >> .config #集成远程下载的配置网页
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n" >> .config #Aria
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config #Aria的网页控制
-        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config #去除用于 IPTV 的 XUPNP        
+        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=y" >> .config #去除用于 IPTV 的 XUPNP        
         echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config  #去除用于 Drcom 的工具
         echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config  #去除可用于锐捷的 eap 客户端
         echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config  #去除南工网络客户端
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >> .config  #SOCAT
+        echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config  #SFTP
+        echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> .config  #HTOP
+        echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> .config  #SFTP
+        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> .config  #IPERF3
+        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> .config  #SFTP
+        echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config  #SFTP
+        
+        
         
         fi
         #########################################################################################
